@@ -73,3 +73,28 @@
 
     }
 }
+@media only screen and (min-width : 800px){
+    .taskContainer{
+        .inputArea{
+            width: 70vw;
+            padding: 1rem;
+                   }
+        .outputArea{
+            width: 70vw;
+            padding: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width : 400px){
+    .taskContainer{
+        .inputArea{
+            width: 90vw;
+            padding: 1rem;
+                   }
+        .outputArea{
+            width: 90vw;
+            padding: 1rem;
+        }
+    }
+}

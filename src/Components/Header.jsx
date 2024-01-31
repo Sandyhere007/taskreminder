@@ -6,8 +6,8 @@ const Header = () => {
     <div className="header">
         <div className="logo">Task_Reminder</div>
         <div className="navList">
-            <Link to={"/"}>My tasks</Link>
-            <Link to={"/"}>My Account</Link>
+            {/* <Link to={"/"}>My tasks</Link> */}
+            {/* <Link to={"/"}>My Account</Link> */}
 
         </div>
     </div>
