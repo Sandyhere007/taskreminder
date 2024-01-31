@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+body{
+    background-image: linear-gradient( 115deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );;
+}

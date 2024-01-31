@@ -1,0 +1,21 @@
+.header{
+    height: 10vh;
+    background-color: rgba(16, 16, 16, 0.096);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >.logo{
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    >.navList{
+        padding: 1rem;
+        margin-right: 2rem;
+        >a{
+            margin-right: 1rem;
+            color: #fff;
+            
+        }
+    }
+}
