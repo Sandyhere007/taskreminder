@@ -8,17 +8,12 @@ const Home = () => {
   const initialArray = localStorage.getItem("tasks") ? JSON.parse(localStorage.getItem("tasks")) : [];
   const [tasks, setTasks] = useState(initialArray);
   const [title, setTitle] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
   const submitHandler = (e) => {
     e.preventDefault();
     setTasks([...tasks, { title } ]);
     setTitle("")
-    if (title.trim() === "") {
-      alert("Please enter a value.");
-      return;
-    }
-    setSubmitted(true);
+   
   };
   const deleteTask = (index) => {
     const filteredArray = tasks.filter((val, i) => {
@@ -39,7 +34,7 @@ const Home = () => {
             <h3>Task</h3>
             <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder='Enter your task' required />
 
-            <input type="submit" value="Add Task" disabled={submitted}/>
+            <input type="submit" value="Add Task" />
           </form>
         </div>
         <div className="outputArea">
